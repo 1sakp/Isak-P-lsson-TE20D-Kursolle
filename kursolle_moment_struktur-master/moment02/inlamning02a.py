@@ -1,3 +1,5 @@
+#Funktion: att räkna ut area, diameter och omkrets på den radie som andvändaren skriver.
+
 #Definerar variabler aka pi och radie. Valde att ha en float istället för en int för att det blir mer precist
 pi = 3.14
 radie = float(input("Skriv radie med decimaler aka med pungkt: "))
