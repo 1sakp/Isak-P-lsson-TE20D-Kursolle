@@ -1,15 +1,13 @@
-lista = [2, 1]
+lista = [-2, 4 , 5, -4, 2, 8]
+
+listapos = []
+listaneg = []
 
 for i in lista:
-    print(i)
+    if i > 0:
+        listapos.append(i)
+    else:
+        listaneg.append(i)
 
-print(lista[1])
-
-lista.append("hej")
-
-lista.insert(1, 0)
-
-lista.remove(1)
-lista.clear()
-
-print(lista)
+print(listapos)
+print(listaneg)
