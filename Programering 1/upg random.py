@@ -1,13 +1,8 @@
-lista = [-2, 4 , 5, -4, 2, 8]
-
-listapos = []
-listaneg = []
-
-for i in lista:
-    if i > 0:
-        listapos.append(i)
+def rakna(x, y, z): 
+    c=x+y-z
+    if c > 0:
+        return c
     else:
-        listaneg.append(i)
+        return c
 
-print(listapos)
-print(listaneg)
+print(rakna(12, 34, 4))
