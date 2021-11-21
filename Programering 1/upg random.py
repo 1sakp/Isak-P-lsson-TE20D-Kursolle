@@ -54,3 +54,11 @@ while 1==1:
         cabinet()
     else:
         bucket()
+
+
+
+def matte(x, y):
+    x+=y
+    print(x)
+
+matte(5, 8)
