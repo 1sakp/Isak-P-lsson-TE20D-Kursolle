@@ -9,7 +9,7 @@ for i in loner:
         stat = 0
         varn = 0
         tot = land + komunal + stat + varn
-        totp = tot/i
+        totp = (tot/i)*100
         totpeng = i - tot
     if arslon < 468700:
         land = (i/100)*11.48
@@ -17,7 +17,7 @@ for i in loner:
         stat = 0
         varn = 0
         tot = land + komunal + stat + varn
-        totp = tot/i
+        totp = (tot/i)*100
         totpeng = i - tot
     if arslon < 675700:
         land = (i/100)*11.48
@@ -25,7 +25,7 @@ for i in loner:
         stat = ((((i-(land+komunal))/100)*20))
         varn = 0
         tot = land + komunal + stat + varn
-        totp = tot/i
+        totp = (tot/i)*100
         totpeng = i - tot
     if arslon > 675700:
         land = (i/100)*11.48
@@ -33,6 +33,6 @@ for i in loner:
         stat = ((((i-(land+komunal))/100)*20))
         varn = ((((i-(land+komunal+stat))/100)*5))
         tot = land + komunal + stat + varn
-        totp = tot/i
+        totp = (tot/i)*100
         totpeng = i - tot
     print(f"""|{i:^15f}|{arslon:^15f}|{land:^15f}|{komunal:^15f}|{stat:^15f}|{varn:^15f}|{tot:^15f}|{totp:^15f}|{totpeng:^15f}""")
