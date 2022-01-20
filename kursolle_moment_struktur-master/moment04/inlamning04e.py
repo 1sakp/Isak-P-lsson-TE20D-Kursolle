@@ -63,5 +63,5 @@ def koraigien():
         inmatning()
     else:
         exit()
-        
+
 inmatning()
