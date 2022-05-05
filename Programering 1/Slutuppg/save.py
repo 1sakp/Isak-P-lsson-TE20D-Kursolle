@@ -67,6 +67,7 @@ if __name__ == "__main__":
     _list_ = [x + 1 for x in range(number)]
     rd.shuffle(_list_)
 
+
     #generators chooser
     #   https://realpython.com/introduction-to-python-generators/
     chooser = True
