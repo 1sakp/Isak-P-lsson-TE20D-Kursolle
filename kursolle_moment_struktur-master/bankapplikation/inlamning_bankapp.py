@@ -17,7 +17,6 @@ def pw_check(name, pasword):
     global bal_global
     with open (str(name)+".txt", "r") as file:
         pword = file.readline()
-        print(pword)
         if pword.strip() == pasword:
             bal_global = file_open_login(name)
             balance()
