@@ -75,7 +75,7 @@ if __name__ == "__main__":
     rd.shuffle(_list_)
 
     #generators chooser
-    #uses true or false instead of try exept
+    #uses true or false instead of try except
     #   https://realpython.com/introduction-to-python-generators/
     chooser = True
     while chooser == True:
@@ -121,4 +121,3 @@ if __name__ == "__main__":
     
     
 #it's possible to count how much time and how manny itterations it loops through but i don't have time for that nor the knowhow
-#
