@@ -18,7 +18,7 @@ def swap(A, i, j):
 #generator that yields the changed list after
 #   https://realpython.com/introduction-to-python-generators/
 
-#Bubble sort just swaps bigger ro higher place in list if the one occupying that space is smaler.
+#Bubble sort just swaps bigger to higher place in list if the one occupying that space is smaler.
 def bubblesort(_list_):
     if len(_list_) == 1:
         return
@@ -61,13 +61,21 @@ def selectionsort(_list_):
 
 # in if __name__ == "__main__" means that it won't be wrongfully triggred and will trigger on it's own (future proofing)
 if __name__ == "__main__":
-    number = int(input("Enter number of integers: "))
+    def input_func():
+        global number
+        try:
+            number = int(input("Enter number of integers: "))
+        except ValueError:
+            input_func()
+        
+    input_func()
     
     #defines and shuffles list
     _list_ = [x + 1 for x in range(number)]
     rd.shuffle(_list_)
 
     #generators chooser
+    #uses true or false instead of try exept
     #   https://realpython.com/introduction-to-python-generators/
     chooser = True
     while chooser == True:
@@ -110,3 +118,7 @@ if __name__ == "__main__":
     #   https://matplotlib.org/stable/api/animation_api.html
     anim = animation.FuncAnimation(fig, func=update_fig, fargs=(bar_rectangle, tick), frames=generator, interval=1, repeat=False)
     plt.show()
+    
+    
+#it's possible to count how much time and how manny itterations it loops through but i don't have time for that nor the knowhow
+#
