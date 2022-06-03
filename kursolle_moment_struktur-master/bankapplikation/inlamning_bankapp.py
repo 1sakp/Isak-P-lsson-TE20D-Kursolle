@@ -98,4 +98,3 @@ e2.pack()
 
 
 master.mainloop()
-
