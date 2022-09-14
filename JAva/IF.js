@@ -1,4 +1,5 @@
 //1
+/*
 var ps = require("prompt-sync");
 var prompt = ps();
 
@@ -8,6 +9,18 @@ if (input > 20 || input < 10){
 } else{
     console.log("innanför intervall")
 };
+*/
+
+//2
+/*
+let ar = prompt("Give a year: ");
+
+if ((ar % 400 == 0 || ar % 4 == 0) && ar % 100 != 0){
+    console.log("Det är ett skottår");
+} else {
+    console.log("Det är inte ett skåtår")
+}
+*/
 
 //4
 let num_input1 = prompt("Skriv 1 nummer: ");
@@ -19,6 +32,11 @@ arr_num.push(num_input1, 1);
 arr_num.push(num_input2, 2);
 arr_num.push(num_input3, 3);
 
-arr_num.sort()
 
-console.log(arr_num)
+console.log(arr_num[1]);
+
+numArray.sort(function(a, b) {if( a === Infinity ) return 1; else if( isNaN(a)) return -1;
+    else return a - b;
+});
+
+console.log(arr_num);
